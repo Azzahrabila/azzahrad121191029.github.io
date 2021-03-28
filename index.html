@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+<div id="banner">
+    <header id="logo">
+        <p>
+        </p><h1>REGISTRASI MAHASISWA</h1>
+        <img src="index.jpg">
+        <br>
+        <a href="https://www.instagram.com/azzahrabilaa/">Contact</a>
+        <br>
+        <td><label>Created By: Azzahra Zalzabila AR (D121191029)</label></td>
+        <p></p>
+
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div id="nameDiv">
+                    <label>Nama*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                    <input type="text" name="nama" id="nama">
+                    <label>NIM</label>
+                    <input type="text" name="nim" id="nim">
+                    <label>Prodi</label>
+                    <input type="text" name="prodi" id="prodi">
+                    <label>Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div  class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+            <table class="list" id="tabel">
+                <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                    <th>Prodi</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+    </tr>
+</table>
+<script src="script.js"></script>
+</body>
+
+</html>
